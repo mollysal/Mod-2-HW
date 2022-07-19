@@ -12,7 +12,7 @@ I learned how to create & apply a color scheme, use Flex box in CSS, & how to bu
 
 Below is a sample image of the website.
 
-![Sample Reference Image](/Mod-2-HW/Assets/images/Website%20Image.png)
+![Website Image](/Mod-2-HW/Assets/images/Website%20Image.png)
 
 ## Credits
 
