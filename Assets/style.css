@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(71, 129, 136);
+    --secondary: rgb(128, 162, 130);
+    --salmon: rgb(175, 108, 84);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0); 
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2.0;
+    background-color: var(--white);
+    color: var(--secondary);
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align navigation horizontally centered with H1 Title */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--primary);
+}
+
+header h1 {
+    padding: 0px 5px 0px 5px; 
+    margin-left: 10px;
+    color: var(--white);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 0px 5px 0px 5px;
+    margin-right: 10px;
+    text-decoration: none; 
+    color: var(--white);
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: var(--salmon);
+}
+
+/* Hero Image */
+.hero {
+    background-image: url("../Assets/images/Beach_Hero.jpg");
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Everything in Webpage below the Hero Image */
+.Main-Webpage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left Side */
+.side {
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary);
+    padding: 20px;
+    color: var(--white);
+}
+
+.side img {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.side ul, .side a{
+    text-decoration: none;
+    list-style-type: circle;
+    color: var(--white);
+}
+
+.side a:hover {
+    background-color: var(--salmon);
+}
+
+/* Main Display (Right Side of Page with Work & Contact) */
+main {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+/* Work Gallery */
+.work {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.work > div {
+    flex: 0 0 77%;
+}
+
+.Examples {
+    display: flex;
+    flex-wrap: wrap;
+    /* Centers the Items Vertically Between Larger work Example */
+    justify-content: center;
+}
+
+.Example-Project {
+    border: 3px solid var(--salmon);
+    color: var(--white);
+    min-height: 150px;
+    max-height: 150px;
+    /* Keeps Items below the Larger Example in rows of 2 where screen permits*/
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding: 3px;
+    margin: 1px;
+    text-decoration: none;
+    background-size: 150%;
+    transition: all 0.5s;
+}
+
+/* First image in Work Gallery is Larger */ 
+.Example-Project:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.Example-Project div {
+    background-color: var(--salmon);
+    padding: 4px 8px;
+}
+
+.Example-Project h3 {
+    font-size: 9px;
+}
+
+
+/* Images for Example Projects will be replaced with project images at a later date */
+.One-Apple {
+    background-image: url("../Assets/images/Apple-Orchard.jpg")
+}
+
+.Two-Sunflower {
+    background-image: url("../Assets/images/Sunflower.jpg");
+}
+
+.Three-Arcade {
+    background-image: url("../Assets/images/Arcade.jpg");
+}
+
+.Four-Lion {
+    background-image: url("../Assets/images/PSU-Lion.jpg");
+}
+
+.Five-Shells {
+    background-image: url("../Assets/images/Shells.jpeg");
+}
+
+/* Contact */
+.Contact {
+    padding: 20px;
+}
+
+.Contact h2 {
+    text-align: center;
+}
+
+.Contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.Contact address a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* Resize */
+@media screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+
